@@ -2,7 +2,7 @@
 	"modules": { 
 		"Horoscope": {
 			"version": "1.0",
-			"name": "signeastrologiqe",
+			"name": "signeastrologique",
 			"rules": {
 				"belier": ["ram horoscope"],
 				"taureau": ["bull horoscope"],
