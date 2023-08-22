@@ -1,0 +1,43 @@
+{
+	"modules": { 
+		"Horoscope": {
+			"version": "1.0",
+			"name": "signeastrologiqe",
+			"tts": {
+				"Salon": {
+					"command1": "J'ai allumé la lumière",
+					"command2": "J'ai éteins la lumière"
+				},
+				"Cuisine": {
+					"command1": "J'ai allumé les spots",
+					"command2": "J'ai éteins les spots"
+				}
+			},
+			"clients": {
+				"Salon": {
+					"command1": 60,
+					"command2": 30
+				},
+				"Cuisine": {
+					"command1": 50,
+					"command2": 20
+				}
+			},
+			"rules": {
+				"belier": ["ram horoscope"],
+				"taureau": ["bull horoscope"],
+				"gemeaux": ["gemini horoscope"],
+				"cancer": ["cancer horoscope"],
+				"lion": ["lion horoscope"],
+				"vierge": ["virgin horoscope"],
+				"balance": ["balance horoscope"],
+				"scorpion": ["scorpion horoscope"],
+				"sagittaire": ["sagittarius horoscope"],
+				"capricorne": ["capricorn horoscope"],
+				"verseau": ["aquarius horoscope"],
+				"poissons": ["fish horoscope"]
+			}
+		}
+	}
+}
+			
