@@ -1,65 +1,19 @@
 exports.action = function(data, callback){
 
 	var tblCommand = {
-	
-	belier : function() {
-		const Signe = Horoscope('belier')
-		return Signe;
-	},
-
-	taureau : function() {
-		const Signe = Horoscope('taureau')
-		return Signe;
-	},
-
-	gemeaux : function() {
-		const Signe = Horoscope('gemeaux')
-		return Signe;		
-	},
-
-	cancer : function() {
-		const Signe = Horoscope('cancer')
-		return Signe;		
-	},
-
-	lion : function() {
-		const Signe = Horoscope('lion')
-		return Signe;				
-	},
-	vierge : function() {
-		const Signe = Horoscope('vierge')
-		return Signe;				
-	},
-
-	balance : function() {
-		const Signe = Horoscope('balance')
-		return Signe;						
-    },
-
-	scorpion : function() {
-		const Signe = Horoscope('scorpion')
-		return Signe;						
-	},
-						
-	sagittaire : function() {
-		const Signe = Horoscope('sagittaire')
-		return Signe;	
-	},
-	
-	capricorne : function() {
-		const Signe = Horoscope('capricorne')
-		return Signe;
-	},
-	
-	verseau : function() {
-		const Signe = Horoscope('verseau')
-		return Signe;
-	},
-	
-	poissons : function() {
-		const Signe = Horoscope('poissons')
-		return Signe;
-	}
+		
+	belier : function() {return Horoscope('belier');},
+	taureau : function() {return Horoscope('taureau');},
+	gemeaux : function() {return Horoscope('gemeau');},
+	cancer : function() {return Horoscope('cancer');},
+	lion : function() {return Horoscope('lion');},
+	vierge : function() {return Horoscope('vierge');},
+	balance : function() {return Horoscope('balance');},
+	scorpion : function() {return Horoscope('scorpion');},				
+	sagittaire : function() {return Horoscope('sagittaire');},
+	capricorne : function() {return Horoscope('capricorne');},
+	verseau : function() {return Horoscope('verseau');},
+	poissons : function() {	return Horoscope('poissons');}
 
 	};
 
