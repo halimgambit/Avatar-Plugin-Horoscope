@@ -29,12 +29,12 @@ exports.action = function(data, callback){
 	.then((body) => {
 	const $ = cheerio.load(body);
 	const signeHoro = $('p.content').first().text();
-	Avatar.speak(`${'Horoscope pour le signe '}${signe}${' '}${signeHoro}`, data.client, () => {
+	Avatar.speak(`Horoscope pour le signe ${signe}${' '}${signeHoro}`, data.client, () => {
 	Avatar.Speech.end(data.client);
 	});
 	})
 	.catch (function (error) {
-	 Avatar.speak(`${"Je n'arrive pas a accédé au site, "} ${error}`, data.client, () => {
+	 Avatar.speak(`Je n'arrive pas a accédé au site, ${error}`, data.client, () => {
 	Avatar.Speech.end(data.client);
 	})
 	});		
