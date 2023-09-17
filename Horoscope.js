@@ -2,22 +2,22 @@ exports.action = function(data, callback){
 
 	var tblCommand = {
 		
-	belier : function() {return Horoscope('belier');},
-	taureau : function() {return Horoscope('taureau');},
-	gemeaux : function() {return Horoscope('gemeau');},
-	cancer : function() {return Horoscope('cancer');},
-	lion : function() {return Horoscope('lion');},
-	vierge : function() {return Horoscope('vierge');},
-	balance : function() {return Horoscope('balance');},
-	scorpion : function() {return Horoscope('scorpion');},				
-	sagittaire : function() {return Horoscope('sagittaire');},
-	capricorne : function() {return Horoscope('capricorne');},
-	verseau : function() {return Horoscope('verseau');},
-	poissons : function() {	return Horoscope('poissons');}
+	belier : function() {Horoscope('belier',data, client);},
+	taureau : function() {Horoscope('taureau',data, client);},
+	gemeaux : function() {Horoscope('gemeau',data, client);},
+	cancer : function() {Horoscope('cancer',data, client);},
+	lion : function() {Horoscope('lion',data, client);},
+	vierge : function() {Horoscope('vierge',data, client);},
+	balance : function() {Horoscope('balance',data, client);},
+	scorpion : function() {Horoscope('scorpion',data, client);},				
+	sagittaire : function() {Horoscope('sagittaire',data, client);},
+	capricorne : function() {Horoscope('capricorne',data, client);},
+	verseau : function() {Horoscope('verseau',data, client);},
+	poissons : function() {Horoscope('poissons',data, client);}
 
 	};
 
-	function Horoscope (signe) {
+	function Horoscope (signe, data, client) {
 	const cheerio = require("cheerio");
 	fetch('https://www.idealvoyance.fr/horoscope-jour-'+ signe)
 	.then(response => {
