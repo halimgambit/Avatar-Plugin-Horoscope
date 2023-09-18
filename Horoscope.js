@@ -4,7 +4,7 @@ exports.action = function(data, callback){
 		
 	belier : function() {Horoscope('belier',data, client);},
 	taureau : function() {Horoscope('taureau',data, client);},
-	gemeaux : function() {Horoscope('gemeau',data, client);},
+	gemeaux : function() {Horoscope('gemeaux',data, client);},
 	cancer : function() {Horoscope('cancer',data, client);},
 	lion : function() {Horoscope('lion',data, client);},
 	vierge : function() {Horoscope('vierge',data, client);},
