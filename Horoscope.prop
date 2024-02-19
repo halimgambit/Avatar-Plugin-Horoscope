@@ -1,0 +1,10 @@
+{
+	"modules": { 
+		"Horoscope": {
+			"version": "1.0",
+			"name": "horoscope",
+			"rules": ["horoscope","sign"]
+		}
+	}
+}
+			
